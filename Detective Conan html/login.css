@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+    font-size: 15px;
+    background: #6dc6fe;
+}
+
+.main {
+    background-image: url(image/detective_conanlogin.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    position: absolute;
+	top: -20px;
+	left: -20px;
+    right: 0%;
+    bottom: 0%;
+	text-align:center;
+    margin: 0;
+    z-index: 0;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+.upper1 {
+    position: fixed;
+	top: -20px;
+	left: -20px;
+    right: 0%;
+    bottom: 0%;
+	width: auto;
+	height: auto;
+	background: rgba(0,0,0,0.6);
+	z-index: 1;
+	opacity: 0.7;
+}
+
+
+
+.container {
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 28%;
+    left: 41%;
+    padding: 2%;
+    display: inline-table;
+    z-index: 2;
+}
+
+.header {
+    text-align: center;
+    text-align: -webkit-center;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin-bottom: 15px;
+}
+
+
+.login{
+    position: relative;
+    padding: 10px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: 2px solid #00346675;
+    background: #ffffff00;
+    color: #1d5874;
+    padding: 11px 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    font-family: 'Carter One', cursive;
+}
+
+#loginbu {
+    margin-left: 13%;
+    max-width: 68%;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    background: #5d699d2e;
+    color: rgb(0, 0, 0);
+    font-family: 'Alef', sans-serif;
+}
+
+#loginbu:active { 
+    background: #2b8a4f57;
+    color: rgb(255, 255, 255);
+}
+
+#hr{
+    height: 2px;
+    margin: 19px -22px 14px -17px;
+    background: rgb(63 115 147 / 48%);
+}
+
+#signupl {
+    text-decoration: none;
+    color: #4d5a71;
+    font-family: 'Alef', sans-serif;
+    margin-left: 16%;
+}
+
+#signupl:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 707px) {
+    .container {
+        left: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        left: 25%;
+    }
+    .header {
+        font-size: 19px;
+    }
+    input, #loginbu, #signupl {
+        font-size: 12px;
+    }
+    #loginbu　{
+        margin-left: 16%;
+    }
+    #signupl {
+        margin-left: 20%;
+    }
+}

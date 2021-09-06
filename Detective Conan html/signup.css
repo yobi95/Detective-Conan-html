@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.6;
+    color:  rgb(25, 15, 104);
+    background: rgb(5, 47, 95);
+}
+
+.container {
+    margin: 31px auto;
+    background: white;
+    padding: 2%;
+    max-width: 65%;
+    display: flex;
+    max-height: auto;
+}
+
+img {
+    max-width: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.form-img {
+    width: 43%;
+}
+
+
+.register-form {
+    width: 50%;
+}
+
+.Reg-form h3 {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 2, 90);
+    font-family: 'Goldman', cursive;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 5px;
+    
+}
+
+.form-radio {
+    margin-bottom: 5px;
+}
+
+.radio-label {
+    padding-right: 55px;
+}
+
+.radio-item {
+    position: relative;
+    margin-right: 56px;
+}
+
+#genderM, #genderF {
+    position: absolute;
+    width: auto;
+    display: inline-block;
+    cursor: pointer; 
+    transform: translate(-16px, 5px);
+}
+
+.radio-item label {
+    font-weight: 100;
+    font-size: 14px;
+    padding-left: 4px;
+    position: relative;
+    z-index: 9;
+    display: block;
+    font-family: 'Goldman', cursive;
+    transform: translate(10px, 3px);
+}
+
+.form-select {
+    position: relative;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 2px;
+    display: block;
+}
+
+select {
+    cursor: pointer;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    border: 2px solid #ebebeb;
+    padding: 11px 12px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+}
+
+.form-content, .form-radio {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.form-button {
+    text-align: right;
+    padding-top: 20px;
+}
+
+.form-submit, .form-reset {
+    width: 49%;
+    max-width: 100%;
+    height: 40px;
+    display: inline-block;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+#reset {
+    background: #585050;
+    color: rgb(255, 255, 255);
+}
+
+#reset:hover {
+    background: #0130ff;
+}
+#reset:active { 
+    background: #ffbb01;
+    color: rgb(0, 0, 0);
+
+}
+#submit {
+    background: #0130ff;
+    color: #fff;
+}
+#submit:active { 
+    background: #ffd901;
+    color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+
+
+    .Reg-form {
+        padding: 4% 10% 0;
+    }
+}
+
+@media screen and (max-width: 997px) and (min-width: 775px) {
+    .radio-item label {
+        transform: translate(-106px, 29px);
+        margin-bottom: 21px;
+    }
+    
+    #genderM, #genderF {
+        transform: translate(-130px, 30px);
+    }
+    .form-submit, .form-reset {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 707px) {
+    .Reg-form h3 {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 775px) {
+
+
+    .form-content {
+        flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -o-flex-direction: column;
+        -ms-flex-direction: column;
+        max-width: 100%;
+    }
+
+    .form-img {
+        width: 100%;
+        text-align:  center;
+    }
+
+    .Reg-form {
+        padding: 10% 10%;
+        margin-right: -103%;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .form-radio {
+        flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column;
+        -o-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+
+    #genderM, #genderF {
+        margin-left: 16px;
+    }
+
+    .radio-item label {
+        margin-left: 8px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .Reg-form h3 {
+        font-size: 15px;
+    }
+    body {
+        max-width: 100%;
+    }
+    label{
+        font-size: 14px;
+    }
+    .radio-item label, input, select, .form-submit, .form-reset{
+        font-size: 12px;
+    }
+}

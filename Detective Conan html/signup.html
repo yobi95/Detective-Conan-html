@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./signup.css" />
+    <title>DetectiveForm</title>
+    <link rel="icon" href="image/detective-conan-thumbnail.ico" type="image/x-icon">
+    <script type="text/javascript">
+
+        function submitans() {
+
+            var ans = "江戶川柯南";
+            if (document.Regform.vaque.value == ans) {
+                alert(document.Regform.name.value + ", 你答啱喇!歡迎加入");
+                return true;
+
+            } else {
+                alert("唔啱呀..請你再答多次");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-content">
+            <div class="form-img">
+                <img src="image/conan-form-img.jpg">
+            </div>
+            <div class="register-form">
+                <form enctype="multipart/form-data" method="POST" action="./MBhomepage.html"
+                    onsubmit="return submitans()" class="Reg-form" name="Regform">
+                    <h3>Join us as a detective</h3>
+                    <div class="form-group">
+                        <label for="name" id="N">Username➲<span style="color: red;">*</span></label>
+                        <input type="text" class="form-input" name="name" id="name" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd" id="P">Password➲<span style="color: red;">*</span></label>
+                        <input type="password" class="form-input" name="pwd" id="pwd" required="required"
+                            title="請輸入至少8個字的密碼" pattern="[A-Za-z0-9._%+-]{8,}" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email➲<span style="color: red;">*</span></label>
+                        <input type="email" class="form-input" name="email" id="email" required="required" />
+                    </div>
+
+                    <div class="form-radio">
+                        <label for="gender" class="radio-label">Gender➲</label>
+                        <div class="radio-item" id="radio-itemM">
+                            <input type="radio" name="gender" id="genderM" value="M" /><label for="M">Male</label>
+                        </div>
+                        <div class="radio-item" id="radio-itemF">
+                            <input type="radio" name="gender" id="genderF" value="F" /><label for="F">Female</label>
+                        </div>
+                    </div>
+                    <div class="threeitems">
+                        <div class="form-group">
+                            <label for="age">Age➲</label>
+                            <div class="form-select">
+                                <select name="age" id="age">
+                                    <option value="A1">
+                                        Below than 18</option>
+                                    <option value="A2">18-25 </option>
+                                    <option value="A3">More than 25</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="qusestion">Verification Question➲<span style="color: red;">*</span></label>
+                            <input type="text" class="form-input" name="vaque" id="vaque" placeholder="請輸入柯南的全名"
+                                required="required" />
+                        </div>
+
+                        <div class="form-button">
+                            <input type="reset" name="reset" id="reset" class="form-reset" value="Reset" />
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="I Agree" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

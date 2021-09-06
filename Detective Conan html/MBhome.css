@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(image/conanwallpaper.jpg);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+	transform: scale(1);
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+    
+}
+
+#heading1 {
+    font-family: 'Lobster', cursive;
+	color: whitesmoke;
+	font-weight:100;
+	text-shadow: 3px 4px 5px #5da4ef;
+}
+
+#himg {
+	width: 80px;
+	height: 80px;
+	margin-bottom: -1%;
+}
+
+* {
+    cursor: 
+    url(image/conancursor.cur),  
+    auto !important;
+} 
+
+.menu {
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	background: rgb(255 255 255 / 16%);
+	position: fixed;
+	height: auto;
+	overflow: auto;
+	user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	-webkit-touch-callout: none;
+}
+  
+.menu .nav1 a {
+	display: block;
+	color: black;
+	padding: 16px;
+	text-decoration: none;
+	text-shadow: 3px 4px 5px white;
+	font-family: 'Comic Neue', cursive;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.menu .nav1 .home {
+	background-color: rgba(17, 17, 71, 0.808);
+	color: rgb(255, 255, 255);
+	text-shadow: 1px -1px 8px white;
+}
+
+.menu .nav1 .logout {
+	color: rgb(187, 0, 0);
+}
+  
+.nav1 a:hover {
+	border:none;
+	background:rgb(255 255 255 / 50%);
+	padding:20px 20px;
+	color:#ffffff;
+	text-shadow: 3px 4px 5px rgb(10, 23, 75);
+}
+
+.menu .nav1 .home:hover {
+	padding: 16px;
+}
+
+.nav1 .rmovie:hover {
+	border:none;
+	background:rgb(255 255 255 / 50%);
+	padding:20px 15px;
+	color:#ffffff;
+	text-shadow: 3px 4px 5px rgb(10, 23, 75);
+}
+
+.nav1 .logout:hover {
+	background: #f17575ad;
+	color: white;
+}
+
+.news {
+	font-family: 'Noto Serif TC', serif;
+	display: inline-table;
+	background: #a8bef040;
+	width: 83%;
+    max-width: 100%;
+    margin-left: 14%;
+}
+
+#newslink {
+	text-decoration: none;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+#newslink:hover {
+	color: rgb(197, 227, 255);
+	text-decoration: underline;
+}
+
+#frame {
+	width: 83%;
+    height: 1000px;
+    float: none;
+    border: hidden;
+    margin-left: 14%;
+} 
+
+.bttop {
+    position: fixed;
+    width: 50px;
+	height: 50px;
+	float: left;
+    background: #18652129;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    border-radius: 43%;
+    line-height: 2;
+	text-shadow: 1px 1px 6px #fff;
+}
+
+footer p {
+	position: relative;
+	left: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+	body {
+		transform: scale(0.95);
+	}
+	.menu {
+	  width: 100%;
+	  height: auto;
+	  position: relative;
+	  background: rgb(255 255 255 / 16%);
+	  overflow: hidden;
+	  margin: -24px 0px;
+	  margin-bottom: 1%;
+	  margin-left: 1%;
+	}
+	.nav1 a{
+	  color: #183a65;
+	  padding: 10px 20px;
+	  font-size: 15px;
+	  text-decoration: none;
+	  float: left;
+	  letter-spacing: 2px;
+	  text-transform: uppercase;
+    }
+    .nav1 {
+        display: inline-flex;
+	}
+	.content {
+		margin-top: 5%;
+	}
+	.news {
+		width: 100%;
+		max-width: 100%;
+		margin-left: 1%;
+	}
+	#frame {
+		width: 100%;
+		max-width: 100%;
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 568px) and (min-width: 545px) {
+	#heading1 {
+		font-size: 29px;
+	}
+	#himg {
+		width: 70px;
+		height: 70px;
+		margin-bottom: -1%;
+	}
+	.nav1 a:hover {
+		padding:20px 15px;
+	}
+}
+
+@media only screen and (max-width: 544px) {
+	body {
+		transform: scale(0.9);
+	}
+    .nav1 {
+        display: block;
+    }
+	.menu .nav1 a {
+		text-align: center;
+		float: none;
+	}
+	.nav1 a{
+		font-size: 13px;
+	}
+	#heading1 {
+		font-size: 25px;
+	}
+	#himg {
+		width: 60px;
+		height: 60px;
+		margin-bottom: -1%;
+	}
+	.news {
+		font-size: 15px;
+	}
+	.bttop {
+		left: 225px;
+	}
+	footer p {
+		left: 0;
+	}
+}

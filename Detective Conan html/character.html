@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./character.css" />
+  <title>Case Closed Character</title>
+  <link rel="icon" href="image/caseclosed-icon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <h1 id="heading1" align="center"><img src="image/conanskating.png" id="himg">
+      Welcome to the Detective Conan's World</h1>
+
+  <div class="menu">
+    <div class="nav1">
+      <a class="home" href="./homepage.html">Home</a>
+      <a class="about" href="./about.html">About</a>
+      <a class="cha" href="./character.html">Main Character</a>
+    </div>
+    <div class="nav2">
+      <a class="login" href="./login.html">Login</a>
+      <a class="signup" href="./signup.html">Sign up</a>
+    </div>
+  </div>
+  <div class="char-container">
+    <div class="mySlides fade"  id="slides">
+      <img id="c1" src="image/conan-cha.jpg">
+      <div class="text">江戶川柯南 （えどがわ コナン）<br/>
+        男主角，工藤新一身體縮小後的身份。<br/>
+        7歲，體重18kg，身高102cm，東京都米花市帝丹小學1年B班。<br/>
+        會利用阿笠博士替自己發明的道具麻醉毛利小五郎並破案。<br/>
+        命名來自日本推理小說始祖江戶川亂步和英國名推理小說家柯南·道爾。<br/>
+        初登場於漫畫第1期，動畫第1話。
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img id="c2" src="image/sanyat-cha.jpg">
+      <div class="text">工藤新一 （くどう しんいち）<br/>
+        男主角，高中生偵探。<br/>
+        17歲，生日5月4日，體重55kg，身高174cm，東京都米花市帝丹高中2年B班。<br/>
+        工藤優作和工藤有希子的兒子，喜歡毛利蘭。<br/>
+        因為推理能力一流，有「平成年代的福爾摩斯」和「日本警察的救世主」之稱。<br/>
+        被黑暗組織成員琴酒灌下毒藥APTX4869後，身體縮小成小學生的模樣，為了避免自己的真實身份曝光而招致危險，化名為江戶川柯南。<br/>
+        和小蘭曾經意外救了苦艾酒一命而被苦艾酒稱為「Cool guy」。<br/> 
+        命名來自於日本經典偵探連續劇《偵探物語 (電視劇)（日語：探偵物語）》的主角工藤俊作和日本科幻小說家星新一。<br/>
+        初登場於漫畫第1期，動畫第1話。
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img id="c3" src="image/siulan-cha.jpg">
+      <div class="text">毛利蘭 （もうり らん）<br/>
+        女主角。<br/>
+        17歲，東京都米花市帝丹高中2年B班，空手道部主將。<br/>
+        毛利小五郎和妃英理的女兒，鈴木園子和遠山和葉的好友。<br/>
+        工藤新一的青梅竹馬及同學。喜歡新一，後來在倫敦意外被新一告白，於漫畫1004話正式給新一的告白回覆，兩人正式成為情侶。<br/>
+        擅長空手道，個性溫柔善良，和新一曾經意外救了苦艾酒一命而被苦艾酒稱為「Angel」。<br/>
+        命名來自於法國小說家莫里斯·盧布朗（Maurice LeBlanc）。<br/>
+        初登場於漫畫第1期，動畫第1話。
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <img id="c4" src="image/oi-cha.jpg">
+      <div class="text">灰原哀 （はいばら あい） / 宮野志保 （みやの しほ）<br/>
+        主線劇情的重要人物。<br/>
+        18歲（外表7歲），東京都米花市帝丹小學1年B班，宮野志保身體縮小後的身份，對柯南抱有好感，但未明顯表現出來。<br/>
+        本來是黑暗組織的成員，代號「Sherry」。後來背叛組織，被阿笠博士收留。<br/>
+        命名來自於英國犯罪小說的女作家P·D·詹姆斯創造的女偵探寇黛麗亞·葛雷（Cordelia Gray，「gray」意譯「灰」）和英國推理作家莎拉·佩琪創造的女偵探華許斯基（V.I. Warshawski，「I」與「哀」同音）。<br/>
+        初登場於漫畫第18期，動畫第129話。
+      </div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+  <footer>
+    <p>&#169;&#65039;since 2020 by TYY</p>
+  </footer>
+
+  <script  type="text/javascript">
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</body>
+
+</html>
